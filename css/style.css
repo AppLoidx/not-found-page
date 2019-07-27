@@ -1,0 +1,73 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+/*
+ * Video
+ */
+.fullscreen-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    overflow: hidden;
+}
+.fullscreen-bg-video video{
+    min-height: 700px;
+    min-width: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.centered-v{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.centered-v > *{
+    padding: 0 20px;
+}
+
+.not-found-text{
+    font-family: "Russo One", Arial, sans-serif ;
+    font-size: 120px;
+    color: #151617;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    transition: all .5s;
+}
+.red-shadow{
+    color: darkred;
+    /*text-shadow: 5px 0 0 #7e080d, -2px 0 0 #56080b, 0 2px 0 #991c39, 0 -2px 0 #f10c13, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;*/
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
+}
+.red-shadow:hover{
+    color: #151617;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.not-found-text:hover {
+    color : darkred;
+}
+
+.not-found-text-row {
+    line-height: 100px;
+}
+
+.error-code-effect{
+    transition: all 2s;
+}
+.error-code-effect:hover{
+    color: #151617;
+}
+
+.error-block {
+    cursor: url(../assets/img/owh.png), default;
+}

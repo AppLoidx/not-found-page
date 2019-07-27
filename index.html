@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/shaker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <iframe src="assets/audio/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio id="player" preload="auto" autoplay loop>
+        <source src="assets/audio/404NotFound.mp3" type="audio/mp3">
+    </audio>
+    <div class="fullscreen-bg-video">
+        <video poster="assets/video/poster.jpg" loop autoplay muted>
+            <!-- <source type="video/webm" src="assets/video/Danheim - Hefna.mp4">
+            <source type="video/ogg" src="media/videoframe.ogg"> -->
+            <source type="video/mp4" src="assets/video/404NotFound.mp4">
+        </video>
+    </div>
+
+    <div class="mx-auto w-50 centered-v justify-content-center error-block">
+        <h2 class="not-found-text red-shadow shake d-inline-flex">
+            <span class="error-code-effect">4</span>
+            <span class="error-code-effect">0</span>
+            <span class="error-code-effect">4</span>
+        </h2>
+        <div class="flex-row not-found-text-row">
+            <span class="row" id="page">
+                <span class="not-found-text shake">P</span>
+                <span class="not-found-text shake">a</span>
+                <span class="not-found-text shake">g</span>
+                <span class="not-found-text shake">e</span>
+            </span>
+            <span class="row not-found-text shake">Not</span>
+            <span class="row not-found-text shake">Found</span>
+        </div>
+    </div>
+
+</body>
+</html>
